@@ -1,8 +1,3 @@
-(ns hello.core
-  (:require [cljs.nodejs :as nodejs]))
+(ns hello.core)
 
-(nodejs/enable-util-print!)
-
-(set! *main-cli-fn*
-  (fn [& args]
-    (apply println args)))
+(println "!!!!")
