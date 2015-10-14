@@ -11,9 +11,13 @@ Some thoughts on a related issue [CLJS-1444](http://dev.clojure.org/jira/browse/
 4. When we approach the code from another reference point (executing the script from another directory), we first need to find the original compiler path (reference point,) and then resolve all paths from there.
 
 Path algebra:
+```
 compiler-path = __dirname - :output-to
+```
 
 Node.js
+```js
 var compiler-path = __dirname.replace(output_to, "")
 path.resolve (compiler-path, output-dir, "goog", "base.js")
 path.resolve (compiler-path, output-dir, "cljs_deps.js")
+```
