@@ -4,5 +4,5 @@
   {:main 'hello.core
    :optimizations :none
    :output-to "main.js"
-   :output-dir "out"
+   :output-dir "/home/carlos/Playground/node-abs/out"
    :target :nodejs})
